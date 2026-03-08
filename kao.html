@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Karo Pitch</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:#0b0b0f;
+color:#e6e6e6;
+line-height:1.6;
+scroll-behavior:smooth;
+}
+
+header{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(120deg,#12121a,#0b0b0f);
+}
+
+header h1{
+font-size:48px;
+color:#c9d3ff;
+}
+
+header p{
+max-width:700px;
+margin:auto;
+margin-top:20px;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin:15px;
+border-radius:8px;
+background:#5c6cff;
+color:white;
+text-decoration:none;
+transition:.3s;
+border:none;
+cursor:pointer;
+}
+
+.btn:hover{
+box-shadow:0 0 15px #5c6cff;
+transform:translateY(-3px);
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+color:#b7c3ff;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:#14141c;
+padding:25px;
+border-radius:10px;
+border:1px solid #1e1e2b;
+transition:.3s;
+}
+
+.card:hover{
+box-shadow:0 0 20px #5c6cff;
+transform:translateY(-6px);
+}
+
+.tags{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:25px;
+}
+
+.tag{
+padding:10px 18px;
+background:#181824;
+border-radius:20px;
+border:1px solid #2a2a3d;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h3{
+font-size:36px;
+color:#5c6cff;
+}
+
+.startups{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.investor-slider{
+display:flex;
+gap:30px;
+overflow:auto;
+justify-content:center;
+margin-top:30px;
+}
+
+.investor-slider div{
+padding:15px 25px;
+background:#151520;
+border-radius:8px;
+border:1px solid #27273a;
+}
+
+textarea,input{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:none;
+margin-top:10px;
+background:#181824;
+color:white;
+}
+
+form{
+max-width:500px;
+margin:auto;
+}
+
+.game{
+text-align:center;
+margin-top:30px;
+}
+
+.score{
+font-size:40px;
+margin:20px;
+color:#5c6cff;
+}
+
+.chatbox{
+background:#14141c;
+padding:20px;
+border-radius:10px;
+max-width:500px;
+margin:auto;
+}
+
+.cta{
+text-align:center;
+padding:80px 20px;
+background:#12121a;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#08080c;
+color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Pitch Your Startup to India's Top Investors</h1>
+
+<p>
+Karo Pitch is a platform where founders across India —
+especially from Tier-2 and Tier-3 cities —
+can pitch their startups and connect with investors.
+</p>
+
+<button class="btn">Apply to Pitch</button>
+<button class="btn">Explore Startups</button>
+
+</header>
+
+<section>
+
+<h2>About Karo Pitch</h2>
+
+<p style="text-align:center;max-width:750px;margin:auto">
+
+Thousands of founders across India are building incredible businesses
+but struggle to access investors, mentorship, and visibility.
+
+Karo Pitch bridges this gap by creating a structured pitch platform
+where founders present their startups to investors.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Startup Ecosystem</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3 id="founders">0</h3>
+<p>Founder Stories</p>
+</div>
+
+<div class="stat">
+<h3 id="community">0</h3>
+<p>Startup Community</p>
+</div>
+
+<div class="stat">
+<h3 id="investors">0</h3>
+<p>Investor Network</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>How It Works</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Apply</h3>
+<p>Submit your startup pitch deck.</p>
+</div>
+
+<div class="card">
+<h3>Shortlisting</h3>
+<p>KaroStartup reviews and selects startups.</p>
+</div>
+
+<div class="card">
+<h3>Pitch</h3>
+<p>Pitch your startup to investors.</p>
+</div>
+
+<div class="card">
+<h3>Funding</h3>
+<p>Raise funding and scale your startup.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Who Can Apply</h2>
+
+<div class="tags">
+
+<div class="tag">D2C Brands</div>
+<div class="tag">Consumer Startups</div>
+<div class="tag">MSMEs</div>
+<div class="tag">SaaS Startups</div>
+<div class="tag">Manufacturing</div>
+<div class="tag">Bharat Startups</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Investors Looking for Startups</h2>
+
+<div class="investor-slider">
+
+<div>Angel Investors</div>
+<div>Venture Capital Firms</div>
+<div>Startup Mentors</div>
+<div>Corporate Investors</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Featured Startups</h2>
+
+<div class="startups">
+
+<div class="card">
+<h3>GreenBite</h3>
+<p>D2C healthy snack brand.</p>
+</div>
+
+<div class="card">
+<h3>BharatKart</h3>
+<p>Helping rural sellers reach India.</p>
+</div>
+
+<div class="card">
+<h3>FinMate</h3>
+<p>Finance tools for MSMEs.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>AI Pitch Analyzer</h2>
+
+<p style="text-align:center">
+Describe your startup idea and simulate investor feedback.
+</p>
+
+<div style="max-width:600px;margin:auto;text-align:center">
+
+<textarea id="idea" placeholder="Describe your startup idea..."></textarea>
+
+<br>
+
+<button onclick="analyzePitch()" class="btn">
+Analyze Pitch
+</button>
+
+<h3 id="analysisResult"></h3>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Mini Game – Investor Interest Simulator</h2>
+
+<div class="game">
+
+<p>Click to simulate investor reaction.</p>
+
+<div class="score" id="score">0</div>
+
+<button onclick="pitchGame()" class="btn">
+Generate Pitch Score
+</button>
+
+<p id="result"></p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Founder Help Assistant</h2>
+
+<div class="chatbox">
+
+<p><b>Assistant:</b> Hi founder! Need help preparing your pitch?</p>
+
+<button onclick="reply()" class="btn">Yes</button>
+
+<p id="chat"></p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Apply to Pitch Your Startup</h2>
+
+<form>
+
+<input type="text" placeholder="Founder Name" required>
+
+<input type="text" placeholder="Startup Name" required>
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Industry">
+
+<textarea placeholder="Describe your startup"></textarea>
+
+<button class="btn">Submit Application</button>
+
+</form>
+
+</section>
+
+<section>
+
+<h2>About KaroStartup</h2>
+
+<p style="text-align:center;max-width:750px;margin:auto">
+
+KaroStartup is one of India's largest startup storytelling platforms,
+publishing thousands of founder journeys and inspiring entrepreneurs
+across the country.
+
+Karo Pitch is an initiative to help founders discover investors
+and accelerate startup growth.
+
+</p>
+
+</section>
+
+<div class="cta">
+
+<h2>Ready to Pitch Your Startup?</h2>
+
+<p>Showcase your idea and connect with investors.</p>
+
+<button class="btn">Apply Now</button>
+
+</div>
+
+<footer>
+
+<p>© 2026 Karo Pitch Demo Prototype</p>
+
+</footer>
+
+<script>
+
+let f=0
+let c=0
+let i=0
+
+let counter=setInterval(function(){
+
+f+=50
+c+=20
+i+=1
+
+document.getElementById("founders").innerHTML=f+"+"
+document.getElementById("community").innerHTML=c+"+"
+document.getElementById("investors").innerHTML=i+"+"
+
+if(f>=5000) clearInterval(counter)
+
+},40)
+
+function analyzePitch(){
+
+let messages=[
+"🔥 Strong startup potential!",
+"🚀 Promising idea. Improve market size.",
+"👍 Good concept but needs traction.",
+"💡 Interesting but refine differentiation.",
+"⚠ Investors may need more clarity."
+]
+
+let r=Math.floor(Math.random()*messages.length)
+
+document.getElementById("analysisResult").innerHTML=messages[r]
+
+}
+
+function pitchGame(){
+
+let score=Math.floor(Math.random()*100)+1
+
+document.getElementById("score").innerHTML=score
+
+if(score>80)
+document.getElementById("result").innerHTML="🚀 Investors love your pitch!"
+
+else if(score>60)
+document.getElementById("result").innerHTML="👍 Good potential."
+
+else if(score>40)
+document.getElementById("result").innerHTML="💡 Needs improvement."
+
+else
+document.getElementById("result").innerHTML="⚠ Work on your idea."
+
+}
+
+function reply(){
+
+document.getElementById("chat").innerHTML=
+"Focus on problem, market size, traction, and revenue model for a strong pitch."
+
+}
+
+</script>
+
+</body>
+</html>
